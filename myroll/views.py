@@ -1,4 +1,6 @@
 from django.shortcuts import render
 
-def post_list(request):
-    return render(request, 'blog/index.html', {})
+def myroll(request):
+    for_range10 = [i for i in range(10)]
+
+    return render(request, 'myroll/index.html', {'for_range10': for_range10})
